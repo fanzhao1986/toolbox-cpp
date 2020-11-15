@@ -158,6 +158,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1Options.html">Options</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1OStaticStream.html">OStaticStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtoolbox_1_1util_1_1overloaded.html">overloaded</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1Presence.html">Presence</a></td></tr>
@@ -167,9 +169,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1RingBuffer.html">RingBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1StaticBuf.html">StaticBuf</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1StaticStream.html">StaticStream</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1StaticStreamBuf.html">StaticStreamBuf</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoolbox_1_1util_1_1StringBuf.html">StringBuf</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">String buffer with fixed upper-bound.  <a href="classtoolbox_1_1util_1_1StringBuf.html#details">More...</a><br /></td></tr>
@@ -220,8 +220,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a5ab445cb4dd72d4d7896e26663fb0a7b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a5ab445cb4dd72d4d7896e26663fb0a7b">ErrMsg</a> = <a class="el" href="classtoolbox_1_1util_1_1StaticStream.html">StaticStream</a>&lt; <a class="el" href="namespacetoolbox_1_1util.html#ab588e9899a383d1ab776239feded256b">MaxErrSize</a> &gt;</td></tr>
-<tr class="separator:a5ab445cb4dd72d4d7896e26663fb0a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ad4a9aee7b84172348dd73aba35d1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a49ad4a9aee7b84172348dd73aba35d1b">ErrMsg</a> = <a class="el" href="classtoolbox_1_1util_1_1OStaticStream.html">OStaticStream</a>&lt; <a class="el" href="namespacetoolbox_1_1util.html#ab588e9899a383d1ab776239feded256b">MaxErrSize</a> &gt;</td></tr>
+<tr class="separator:a49ad4a9aee7b84172348dd73aba35d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4170773b23543d06eb783e2223cf31e6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a4170773b23543d06eb783e2223cf31e6">Int16Policy</a> = <a class="el" href="structtoolbox_1_1util_1_1IntPolicy.html">IntPolicy</a>&lt; std::int16_t &gt;</td></tr>
 <tr class="separator:a4170773b23543d06eb783e2223cf31e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e55e5995d31f757352d2e6f34f1a56"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#ad3e55e5995d31f757352d2e6f34f1a56">Int32Policy</a> = <a class="el" href="structtoolbox_1_1util_1_1IntPolicy.html">IntPolicy</a>&lt; std::int32_t &gt;</td></tr>
@@ -304,7 +304,7 @@ Functions</h2></td></tr>
 <tr class="separator:a6519214ae5a52860644d6eb04743b95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655ab5f32070c23991789cc3584af54d"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a655ab5f32070c23991789cc3584af54d">operator&lt;&lt;</a> (ostream &amp;os, <a class="el" href="namespacetoolbox_1_1util.html#afb1bdeda157805a64f20ded302b55cee">Test</a> t)</td></tr>
 <tr class="separator:a655ab5f32070c23991789cc3584af54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104e396546d0fdd7b672fab659ae3a72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetoolbox_1_1util.html#a5ab445cb4dd72d4d7896e26663fb0a7b">ErrMsg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a104e396546d0fdd7b672fab659ae3a72">err_msg</a> () noexcept</td></tr>
+<tr class="memitem:a104e396546d0fdd7b672fab659ae3a72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetoolbox_1_1util.html#a49ad4a9aee7b84172348dd73aba35d1b">ErrMsg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a104e396546d0fdd7b672fab659ae3a72">err_msg</a> () noexcept</td></tr>
 <tr class="separator:a104e396546d0fdd7b672fab659ae3a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18673d04b2024aa477fc59b3d20b7695"><td class="memTemplParams" colspan="2">template&lt;typename FnT &gt; </td></tr>
 <tr class="memitem:a18673d04b2024aa477fc59b3d20b7695"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a18673d04b2024aa477fc59b3d20b7695">make_finally</a> (FnT fn) noexcept</td></tr>
@@ -391,11 +391,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a028182935b91d8e4d7b794a0c9479aa5"><td class="memTemplParams" colspan="2">template&lt;auto MemFnT, typename ClassT  = typename FunctionTraits&lt;decltype(MemFnT)&gt;::ClassType&gt; </td></tr>
 <tr class="memitem:a028182935b91d8e4d7b794a0c9479aa5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a028182935b91d8e4d7b794a0c9479aa5">bind</a> (ClassT *obj) noexcept</td></tr>
 <tr class="separator:a028182935b91d8e4d7b794a0c9479aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0eb16df58aa50d817e4fa266392017"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a8a0eb16df58aa50d817e4fa266392017">reset</a> (ostream &amp;os) noexcept</td></tr>
-<tr class="separator:a8a0eb16df58aa50d817e4fa266392017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9485031292a740a22912ffd41ae928ea"><td class="memTemplParams" colspan="2">template&lt;std::size_t MaxN, typename ValueT &gt; </td></tr>
-<tr class="memitem:a9485031292a740a22912ffd41ae928ea"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a9485031292a740a22912ffd41ae928ea">operator&lt;&lt;</a> (<a class="el" href="classtoolbox_1_1util_1_1StaticStream.html">StaticStream</a>&lt; MaxN &gt; &amp;ss, ValueT &amp;&amp;val)</td></tr>
-<tr class="separator:a9485031292a740a22912ffd41ae928ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e933f09d08f3d4e212107b35ff6587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Config_8h.html#ae1d5e2ff332359a2f7905596626f2bf3">TOOLBOX_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a12e933f09d08f3d4e212107b35ff6587">reset</a> (std::ostream &amp;os) noexcept</td></tr>
+<tr class="separator:a12e933f09d08f3d4e212107b35ff6587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52a5ed58199725842e82fcb0b9a7472"><td class="memTemplParams" colspan="2">template&lt;std::size_t MaxN, typename ValueT &gt; </td></tr>
+<tr class="memitem:af52a5ed58199725842e82fcb0b9a7472"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#af52a5ed58199725842e82fcb0b9a7472">operator&lt;&lt;</a> (<a class="el" href="classtoolbox_1_1util_1_1OStaticStream.html">OStaticStream</a>&lt; MaxN &gt; &amp;os, ValueT &amp;&amp;val)</td></tr>
+<tr class="separator:af52a5ed58199725842e82fcb0b9a7472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cbff2e545c5d6bfb5e86ae934485d1"><td class="memTemplParams" colspan="2">template&lt;auto DelimT, typename ArgT , typename... ArgsT&gt; </td></tr>
 <tr class="memitem:a27cbff2e545c5d6bfb5e86ae934485d1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a27cbff2e545c5d6bfb5e86ae934485d1">join</a> (std::ostream &amp;os, const ArgT &amp;arg, const ArgsT &amp;... args)</td></tr>
 <tr class="separator:a27cbff2e545c5d6bfb5e86ae934485d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -544,18 +544,21 @@ Variables</h2></td></tr>
 <tr class="memitem:ae6ea434bdb6db69ebbcdbafb79a63edb"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#ae6ea434bdb6db69ebbcdbafb79a63edb">MaxRyuFixedBuf</a> {<a class="el" href="namespacetoolbox_1_1util.html#a59ad4421850fcf6c863959e6694466e6">max_ryu_fixed_buf</a>()}</td></tr>
 <tr class="memdesc:ae6ea434bdb6db69ebbcdbafb79a63edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum buffer space require for Ryu fixed formatted doubles.  <a href="namespacetoolbox_1_1util.html#ae6ea434bdb6db69ebbcdbafb79a63edb">More...</a><br /></td></tr>
 <tr class="separator:ae6ea434bdb6db69ebbcdbafb79a63edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a4d256b11589552b8d561ed6eabcbe"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structtoolbox_1_1util_1_1detail_1_1ResetState.html">detail::ResetState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a03a4d256b11589552b8d561ed6eabcbe">reset_state</a> {}</td></tr>
+<tr class="memdesc:a03a4d256b11589552b8d561ed6eabcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">I/O manipulator that resets I/O state.  <a href="namespacetoolbox_1_1util.html#a03a4d256b11589552b8d561ed6eabcbe">More...</a><br /></td></tr>
+<tr class="separator:a03a4d256b11589552b8d561ed6eabcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423a7e6275c1fd514196e626688e1cf5"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetoolbox_1_1util.html#a423a7e6275c1fd514196e626688e1cf5">Struct</a> = <a class="el" href="structtoolbox_1_1util_1_1detail_1_1Struct.html">detail::Struct</a>&lt;&gt;{}</td></tr>
 <tr class="separator:a423a7e6275c1fd514196e626688e1cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a5ab445cb4dd72d4d7896e26663fb0a7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ab445cb4dd72d4d7896e26663fb0a7b">&#9670;&nbsp;</a></span>ErrMsg</h2>
+<a id="a49ad4a9aee7b84172348dd73aba35d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ad4a9aee7b84172348dd73aba35d1b">&#9670;&nbsp;</a></span>ErrMsg</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacetoolbox_1_1util.html#a5ab445cb4dd72d4d7896e26663fb0a7b">toolbox::util::ErrMsg</a> = typedef <a class="el" href="classtoolbox_1_1util_1_1StaticStream.html">StaticStream</a>&lt;<a class="el" href="namespacetoolbox_1_1util.html#ab588e9899a383d1ab776239feded256b">MaxErrSize</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespacetoolbox_1_1util.html#a49ad4a9aee7b84172348dd73aba35d1b">toolbox::util::ErrMsg</a> = typedef <a class="el" href="classtoolbox_1_1util_1_1OStaticStream.html">OStaticStream</a>&lt;<a class="el" href="namespacetoolbox_1_1util.html#ab588e9899a383d1ab776239feded256b">MaxErrSize</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -818,7 +821,7 @@ template&lt;typename KeyT , typename HashT  = RobinHash&lt;KeyT&gt;, typename Ke
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2Stream_8hpp_source.html#l00096">96</a> of file <a class="el" href="util_2Stream_8hpp_source.html">Stream.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2Stream_8hpp_source.html#l00102">102</a> of file <a class="el" href="util_2Stream_8hpp_source.html">Stream.hpp</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1171,7 @@ template&lt;typename EnumT , typename  = std::enable_if_t&lt;std::is_enum_v&lt;E
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Config_8h.html#ae1d5e2ff332359a2f7905596626f2bf3">TOOLBOX_API</a> <a class="el" href="namespacetoolbox_1_1util.html#a5ab445cb4dd72d4d7896e26663fb0a7b">ErrMsg</a> &amp; toolbox::util::err_msg </td>
+          <td class="memname"><a class="el" href="Config_8h.html#ae1d5e2ff332359a2f7905596626f2bf3">TOOLBOX_API</a> <a class="el" href="namespacetoolbox_1_1util.html#a49ad4a9aee7b84172348dd73aba35d1b">ErrMsg</a> &amp; toolbox::util::err_msg </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1180,7 +1183,7 @@ template&lt;typename EnumT , typename  = std::enable_if_t&lt;std::is_enum_v&lt;E
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Thread-local error message. This thread-local instance of <a class="el" href="classtoolbox_1_1util_1_1StaticStream.html">StaticStream</a> can be used to format error messages before throwing. Note that the <a class="el" href="classtoolbox_1_1util_1_1StaticStream.html">StaticStream</a> is reset each time this function is called. </p>
+<p>Thread-local error message. This thread-local instance of <a class="el" href="classtoolbox_1_1util_1_1OStaticStream.html">OStaticStream</a> can be used to format error messages before throwing. Note that the <a class="el" href="classtoolbox_1_1util_1_1OStaticStream.html">OStaticStream</a> is reset each time this function is called. </p>
 
 <p class="definition">Definition at line <a class="el" href="util_2Exception_8cpp_source.html#l00054">54</a> of file <a class="el" href="util_2Exception_8cpp_source.html">Exception.cpp</a>.</p>
 
@@ -2405,8 +2408,8 @@ template&lt;auto MemFnT, typename ClassT  = typename FunctionTraits&lt;decltype(
 
 </div>
 </div>
-<a id="a8a0eb16df58aa50d817e4fa266392017"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a0eb16df58aa50d817e4fa266392017">&#9670;&nbsp;</a></span>reset()</h2>
+<a id="a12e933f09d08f3d4e212107b35ff6587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e933f09d08f3d4e212107b35ff6587">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2417,7 +2420,7 @@ template&lt;auto MemFnT, typename ClassT  = typename FunctionTraits&lt;decltype(
         <tr>
           <td class="memname"><a class="el" href="Config_8h.html#ae1d5e2ff332359a2f7905596626f2bf3">TOOLBOX_API</a> void toolbox::util::reset </td>
           <td>(</td>
-          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>os</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2429,12 +2432,10 @@ template&lt;auto MemFnT, typename ClassT  = typename FunctionTraits&lt;decltype(
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2Stream_8cpp_source.html#l00023">23</a> of file <a class="el" href="util_2Stream_8cpp_source.html">Stream.cpp</a>.</p>
-
 </div>
 </div>
-<a id="a9485031292a740a22912ffd41ae928ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9485031292a740a22912ffd41ae928ea">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/5]</span></h2>
+<a id="af52a5ed58199725842e82fcb0b9a7472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52a5ed58199725842e82fcb0b9a7472">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2444,8 +2445,8 @@ template&lt;std::size_t MaxN, typename ValueT &gt; </div>
         <tr>
           <td class="memname">auto&amp; toolbox::util::operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtoolbox_1_1util_1_1StaticStream.html">StaticStream</a>&lt; MaxN &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ss</em>, </td>
+          <td class="paramtype"><a class="el" href="classtoolbox_1_1util_1_1OStaticStream.html">OStaticStream</a>&lt; MaxN &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2461,7 +2462,7 @@ template&lt;std::size_t MaxN, typename ValueT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2Stream_8hpp_source.html#l00090">90</a> of file <a class="el" href="util_2Stream_8hpp_source.html">Stream.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2Stream_8hpp_source.html#l00096">96</a> of file <a class="el" href="util_2Stream_8hpp_source.html">Stream.hpp</a>.</p>
 
 </div>
 </div>
@@ -2499,7 +2500,7 @@ template&lt;auto DelimT, typename ArgT , typename... ArgsT&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2Stream_8hpp_source.html#l00099">99</a> of file <a class="el" href="util_2Stream_8hpp_source.html">Stream.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2Stream_8hpp_source.html#l00105">105</a> of file <a class="el" href="util_2Stream_8hpp_source.html">Stream.hpp</a>.</p>
 
 </div>
 </div>
@@ -4256,6 +4257,32 @@ template&lt;typename ValueT &gt; </div>
 <p>Maximum buffer space require for Ryu fixed formatted doubles. </p>
 
 <p class="definition">Definition at line <a class="el" href="Ryu_8hpp_source.html#l00047">47</a> of file <a class="el" href="Ryu_8hpp_source.html">Ryu.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a03a4d256b11589552b8d561ed6eabcbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a4d256b11589552b8d561ed6eabcbe">&#9670;&nbsp;</a></span>reset_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structtoolbox_1_1util_1_1detail_1_1ResetState.html">detail::ResetState</a> toolbox::util::reset_state {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>I/O manipulator that resets I/O state. </p>
+
+<p class="definition">Definition at line <a class="el" href="util_2Stream_8hpp_source.html#l00038">38</a> of file <a class="el" href="util_2Stream_8hpp_source.html">Stream.hpp</a>.</p>
 
 </div>
 </div>
